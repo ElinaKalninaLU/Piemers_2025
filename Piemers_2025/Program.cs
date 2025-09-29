@@ -23,6 +23,13 @@ GeometryFigure gf = sq2;
 Console.WriteLine(gf.izdruka());
 Console.WriteLine(gf);
 
+var fc = new FigureCollection();
+fc.Add(sq);
+fc.Add(sq2);
+fc.Add(rec);
+Console.WriteLine(fc.Print());
+
+
 
 
 

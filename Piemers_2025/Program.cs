@@ -29,6 +29,19 @@ fc.Add(sq2);
 fc.Add(rec);
 Console.WriteLine(fc.Print());
 
+//-----------------------------
+string path = "C:\\Temp\\data.txt"; //pamainiet norādot savu ceļu uz datni, skat. P.S.1  
+var dm = new GeometryXMLDataManager(path); // pamainiet lietojot savu Data Manager
+dm.CreateTestData();
+Console.WriteLine(dm.Print());
+dm.Save();
+dm.Reset();
+Console.WriteLine(dm.Print());
+dm.Load();
+Console.WriteLine(dm.Print());
+Console.ReadLine();
+
+
 
 
 

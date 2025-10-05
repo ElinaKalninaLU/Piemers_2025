@@ -31,7 +31,9 @@ Console.WriteLine(fc.Print());
 
 //-----------------------------
 string path = "C:\\Temp\\data.txt"; //pamainiet norādot savu ceļu uz datni, skat. P.S.1  
-var dm = new GeometryXMLDataManager(path); // pamainiet lietojot savu Data Manager
+//var dm = new GeometryXMLDataManager(path); // pamainiet lietojot savu Data Manager
+var dm = new GeometryJSONDataManager2(path); // pamainiet lietojot savu Data Manager
+//Test
 dm.CreateTestData();
 Console.WriteLine(dm.Print());
 dm.Save();

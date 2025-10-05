@@ -10,6 +10,7 @@ namespace Geometry
     [XmlInclude(typeof(Square))]
     [XmlInclude(typeof(Rectangle))]
     [XmlInclude(typeof(Polygon))]
+
     public class FigureCollection : IAddFigure
     {
         public FigureCollection() {

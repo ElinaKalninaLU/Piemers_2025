@@ -1,8 +1,12 @@
 ﻿using System.Diagnostics;
-using System.Xml.Serialization;
+using System.Text.Json.Serialization;
 
 namespace Geometry
 {
+    //Anotācijas, lai varētu izmnatot JSON serializāciju kolekcijai ar apakštipiem
+    //[JsonDerivedType(typeof(Square), typeDiscriminator: "Square")]
+    //[JsonDerivedType(typeof(Rectangle), typeDiscriminator: "Rectangle")]
+    //[JsonDerivedType(typeof(Polygon), typeDiscriminator: "Polygon")]
     public abstract class GeometryFigure
     {
         public ColorEnum myColor {  get; set; } = ColorEnum.Green;

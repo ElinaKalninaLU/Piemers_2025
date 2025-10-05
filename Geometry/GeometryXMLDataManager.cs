@@ -42,6 +42,9 @@ namespace Geometry
             Add(sq2);
             Add(rec);
 
+            Polygon poly = new Polygon(1,1,0,1,1,0,0,0);
+            Add(poly);
+
             return true;
         }
 

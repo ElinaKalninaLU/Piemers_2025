@@ -32,6 +32,7 @@ namespace Geometry
         {
             var sq = new Square();
             sq.Edge = 1;
+            sq.myColor = ColorEnum.Red;
 
             Rectangle rec = new();
             rec.Height = 1;

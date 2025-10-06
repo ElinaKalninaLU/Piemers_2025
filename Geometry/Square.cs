@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Geometry
@@ -25,7 +26,7 @@ namespace Geometry
 			
 			}
 		}
-
+        [JsonIgnore]
         public override int Area => Edge*Edge;
 
         public override int Perimeter()
@@ -39,9 +40,9 @@ namespace Geometry
             return "Edge: " + Edge + ", "+ base.ToString() ;
         }
 
-		public Square(int e) { Edge = e; }
+		public Square(int e) { Edge = e; MyColor = ColorEnum.Blue; }
 
-		public Square() { }
+		public Square() { MyColor = ColorEnum.Red; }
 
         public string izdruka()
         {

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Geometry
@@ -50,6 +51,7 @@ namespace Geometry
             return 2 * Height + 2 * Width;
         }
 
+        [JsonIgnore]
         public override int Area => Height * Width;
     }
 }

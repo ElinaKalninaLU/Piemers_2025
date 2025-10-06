@@ -9,20 +9,22 @@ namespace Geometry
     public class FigureCollection : IAddFigure
     {
         public FigureCollection() {
-            gfList = new List<GeometryFigure>();
+            GfList = new List<GeometryFigure>();
         }
 
         List<GeometryFigure> gfList;
 
+        public List<GeometryFigure> GfList { get => gfList; set => gfList = value; }
+
         public void Add(GeometryFigure figure)
         {
-            gfList.Add(figure);
+            GfList.Add(figure);
         }
 
         public string Print()
         {
             string s = "Figure list: " + Environment.NewLine;
-            foreach (GeometryFigure figure in gfList)
+            foreach (GeometryFigure figure in GfList)
             {
                 s += figure.ToString() + Environment.NewLine;
             }

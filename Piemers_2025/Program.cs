@@ -22,12 +22,26 @@ Console.WriteLine(sq2.izdruka());
 GeometryFigure gf = sq2;
 Console.WriteLine(gf.izdruka());
 Console.WriteLine(gf);
+Polygon poly = new Polygon(1, 1, 0, 1, 1, 0, 0, 0);
 
 var fc = new FigureCollection();
 fc.Add(sq);
 fc.Add(sq2);
 fc.Add(rec);
+fc.Add(poly);
 Console.WriteLine(fc.Print());
+
+string path = "C:\\Temp\\data.txt"; //pamainiet norādot savu ceļu uz datni, skat. P.S.1  
+var dm = new JSONDataManager(path); // pamainiet lietojot savu Data Manager
+//Test
+dm.CreateTestData();
+Console.WriteLine(dm.Print());
+dm.Save();
+dm.Reset();
+Console.WriteLine(dm.Print());
+dm.Load();
+Console.WriteLine(dm.Print());
+Console.ReadLine();
 
 
 

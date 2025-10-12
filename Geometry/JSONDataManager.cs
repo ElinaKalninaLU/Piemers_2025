@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Geometry
 {
-    public class JSONDataManager : IDataManager
+    public class JSONDataManager : IDataManager, IAddFigure
     {
         public FigureCollection fc { get; set; }
         public string path { get; set; } = "C:\\Temp\\data.txt";
@@ -83,6 +83,11 @@ namespace Geometry
                 Debug.WriteLine(ex.Message);
                 return false;
             }
+        }
+
+        public void Add(GeometryFigure figure)
+        {
+            fc.Add(figure);
         }
     }
 }

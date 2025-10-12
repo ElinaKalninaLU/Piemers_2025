@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Geometry;assembly=Geometry"
+             x:Class="TestLekcija6_7.Forms.AddSquare"
+             
+             Title="AddSquare">
+    <VerticalStackLayout>
+        <Label 
+            Text="Izveidot kvadrātu!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <HorizontalStackLayout>
+            <Label Text="Mala: "></Label>
+            <Entry x:Name="txtMala"></Entry>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label Text="Krāsa: "></Label>
+            <Picker x:Name="cboKrasa"></Picker>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label Text="Nosaukums: "></Label>
+            <Entry x:Name="txtNosaukums" Text=""></Entry>
+        </HorizontalStackLayout>
+        <Button x:Name="btnAdd" Text="Pievienot" Clicked="btnAdd_Clicked"></Button>
+    </VerticalStackLayout>
+</ContentPage>

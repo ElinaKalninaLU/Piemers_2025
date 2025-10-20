@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MAUI_Piemers.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MAUI_Piemers"
+    xmlns:forms="clr-namespace:MAUI_Piemers.Forms"
+    Title="MAUI_Piemers">
+
+    <ShellContent
+    Title="Data Managment Page"
+    ContentTemplate="{DataTemplate forms:DataManagmentPage}"
+    Route="DataManagmentPage" />
+    <ShellContent
+ Title="Add Square"
+ ContentTemplate="{DataTemplate forms:AddSquare}"
+ Route="AddSquare" />
+    <ShellContent
+ Title="Figure List"
+ ContentTemplate="{DataTemplate forms:FigureList}"
+ Route="FigureList" />
+    <ShellContent
+   Title="Add Polygon"
+   ContentTemplate="{DataTemplate local:Forms.AddPolygon}"
+   Route="AddPolygon" />
+    <ShellContent
+        Title="Main Test Page"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+</Shell>

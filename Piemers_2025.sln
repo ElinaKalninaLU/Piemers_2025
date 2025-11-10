@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geometry", "Geometry\Geomet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAUI_Piemers", "MAUI_Piemers\MAUI_Piemers.csproj", "{6601FFAD-F6CD-2D0A-BB29-E24071B95CE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lekcija9_2025", "Lekcija9_2025\Lekcija9_2025.csproj", "{B21DC5A0-261C-D5A3-2734-A68D598AB3D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBFirst", "DBFirst\DBFirst.csproj", "{D2896EB8-CC15-EBF3-6696-1411676AF459}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +32,14 @@ Global
 		{6601FFAD-F6CD-2D0A-BB29-E24071B95CE8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{6601FFAD-F6CD-2D0A-BB29-E24071B95CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6601FFAD-F6CD-2D0A-BB29-E24071B95CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B21DC5A0-261C-D5A3-2734-A68D598AB3D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B21DC5A0-261C-D5A3-2734-A68D598AB3D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B21DC5A0-261C-D5A3-2734-A68D598AB3D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B21DC5A0-261C-D5A3-2734-A68D598AB3D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2896EB8-CC15-EBF3-6696-1411676AF459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2896EB8-CC15-EBF3-6696-1411676AF459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2896EB8-CC15-EBF3-6696-1411676AF459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2896EB8-CC15-EBF3-6696-1411676AF459}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

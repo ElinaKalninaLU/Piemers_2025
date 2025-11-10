@@ -9,6 +9,7 @@ namespace Geometry
 {
     public class Rectangle: GeometryFigure
     {
+     
 
         private int _height;
 

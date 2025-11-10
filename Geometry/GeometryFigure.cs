@@ -9,9 +9,10 @@ namespace Geometry
     [JsonDerivedType(typeof(Polygon), typeDiscriminator: "Polygon")]
     public abstract class GeometryFigure
     {
-        public string Name { get; set; }
+        public int ID { get; set; }
+        public string? Name { get; set; }
 
-        public ColorEnum MyColor { get; set; } = ColorEnum.Green;
+        public ColorEnum? MyColor { get; set; } = ColorEnum.Green;
 
         public override string? ToString()
         {

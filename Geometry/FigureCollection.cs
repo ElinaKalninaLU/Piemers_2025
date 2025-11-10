@@ -30,5 +30,10 @@ namespace Geometry
             }
             return s;
         }
+
+        public void Save()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

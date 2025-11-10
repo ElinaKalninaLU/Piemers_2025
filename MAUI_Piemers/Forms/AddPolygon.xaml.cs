@@ -54,6 +54,7 @@ public partial class AddPolygon : ContentPage
             {
                 _poly.Points = points;
             }
+            dm.Save();
             Navigation.PopAsync();
         }
         else

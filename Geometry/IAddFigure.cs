@@ -8,6 +8,8 @@ namespace Geometry
 {
     public interface IAddFigure
     {
-        void Add(GeometryFigure figure); 
+        void Add(GeometryFigure figure);
+
+        void Save();
     }
 }

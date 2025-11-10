@@ -4,11 +4,13 @@ namespace MAUI_Piemers.Forms;
 
 public partial class FigureList : ContentPage
 {
-    private FigureCollection fc;
-	public FigureList()
+    private FigureAddManager fc;
+    private IRemove rf;
+    public FigureList()
 	{
 		InitializeComponent();
         fc = MyStaticItems.myDm.fc;
+        rf = fc;
         cVList.ItemsSource = fc.GfList;
 
     }
@@ -51,7 +53,7 @@ public partial class FigureList : ContentPage
                 if (answer)
                 {
 
-                    fc.GfList.Remove(f);
+                    rf.Remove(f);
                     cVList.ItemsSource = null;
                     cVList.ItemsSource = fc.GfList;
                 }

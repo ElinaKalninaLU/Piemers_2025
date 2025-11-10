@@ -9,6 +9,7 @@ namespace MAUI_Piemers
 {
     public static class MyStaticItems
     {
-        public static JSONDataManager myDm = new JSONDataManager();
+        // public static JSONDataManager myDm = new JSONDataManager();
+        public static DBDataManager myDm = new DBDataManager();
     }
 }

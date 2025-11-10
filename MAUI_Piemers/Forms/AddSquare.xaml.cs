@@ -46,6 +46,7 @@ public partial class AddSquare : ContentPage
                 {
                     sq.MyColor = (ColorEnum)cboKrasa.SelectedIndex;
                 }
+                fc.Save();
                 Navigation.PopAsync();
             }
         }

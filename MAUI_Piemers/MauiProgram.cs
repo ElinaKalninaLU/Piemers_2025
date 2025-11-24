@@ -15,8 +15,12 @@ namespace MAUI_Piemers
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
+            builder.Services.AddTransient<ViewModel.IRectangleViewModel, ViewModel.RectanglesViewModelLite>();
+            //  builder.Services.AddTransient<ViewModel.IRectangleViewModel, ViewModel.RectanglesViewModelEF>();
+            builder.Services.AddTransient<Views.RectangleView>();
+
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

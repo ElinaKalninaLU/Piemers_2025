@@ -5,6 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MAUI_Piemers"
     xmlns:forms="clr-namespace:MAUI_Piemers.Forms"
+     xmlns:views="clr-namespace:MAUI_Piemers.Views"
     Title="MAUI_Piemers">
 
     <ShellContent
@@ -23,6 +24,10 @@
    Title="Add Polygon"
    ContentTemplate="{DataTemplate local:Forms.AddPolygon}"
    Route="AddPolygon" />
+    <ShellContent
+   Title="Add Rectangle"
+   ContentTemplate="{DataTemplate local:Views.RectangleView}"
+   Route="AddRectangle" />
     <ShellContent
         Title="Main Test Page"
         ContentTemplate="{DataTemplate local:MainPage}"

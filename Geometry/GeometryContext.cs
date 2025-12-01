@@ -10,11 +10,18 @@ namespace Geometry
 {
     public class GeometryContext:DbContext
     {
+        public GeometryContext(DbContextOptions<GeometryContext> options)
+            : base(options)
+        {
+        }
+
+        public GeometryContext() { }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string cs = ConfigurationManager.ConnectionStrings
-["GeometryDB"].ConnectionString;
-            optionsBuilder.UseSqlServer(cs);
+      //        string cs = ConfigurationManager.ConnectionStrings["GeometryDB"].ConnectionString;
+       //     string cs = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Geometry2025;Integrated Security=True;Connect Timeout=30;Encrypt=True;";
+        //    optionsBuilder.UseSqlServer(cs);
         }
 
         public DbSet<Rectangle> Rectangles { get; set; }
